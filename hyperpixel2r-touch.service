@@ -1,0 +1,12 @@
+[Unit]
+Description=HyperPixel 2r Touch Input Daemon
+After=local-fs.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/hyperpixel2r-touch
+Restart=always
+RestartSec=1
+
+[Install]
+WantedBy=multi-user.target
